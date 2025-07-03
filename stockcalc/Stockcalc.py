@@ -32,7 +32,7 @@ with tab1:
         elif (option_type=='put'):
            st.success(f"The fair value of this put option is ₹{price:.2f}. Avoid selling it for less.")
 with tab2:
-    st.subheader("Binomial Tree Method")
+    
     S2 = st.number_input("Deal Price for Stock", min_value=1.0, value=100.0, key="bt_S")
     K2 = st.number_input("Current  Price of Stock", min_value=1.0, value=100.0, key="bt_K")
     T2 = st.slider("Time to Expiry (years)", 0.01, 3.0, 1.0, step=0.01, key="bt_T")
